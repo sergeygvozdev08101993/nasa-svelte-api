@@ -1,0 +1,74 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	background-color: #270237;
+	background-image: url(img/stars.svg), url(img/bg.svg), url(/img/asteriod2.svg), url(/img/asteriod1.svg);
+	background-repeat: repeat, no-repeat, no-repeat, no-repeat;
+	background-size: auto, cover, auto, auto;
+	background-position: bottom, bottom, 100px 100px, 90% 15%;
+	min-height: 100%;
+}
+
+body {
+
+	position: relative;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	font-family: 'Ubuntu Mono', Menlo, Consolas, Monaco, Liberation Mono,
+	Lucida Console, monospace;
+	font-size: 24px;
+	color: #dfdfdf;
+}
+
+h2 {
+	font-size: 28px;
+	margin-top: 40px;
+}
+
+strong {
+	color: white;
+}
+
+a {
+	color: #f47d20;
+}
+
+.more {
+	font-size: 80%;
+}
+
+.is-hazard .hazard {
+	color: red;
+	font-weight: bold;
+	animation: hazard 1s infinite;
+	padding: 2px 4px;
+}
+
+hr,
+.no-hazard,
+.is-hazard {
+	border: 0;
+	border-bottom: 4px solid #b077c8;
+}
+
+@keyframes hazard {
+	0% {
+		color: red;
+		background: inherit;
+	}
+
+	50% {
+		color: inherit;
+		background: red;
+	}
+
+	51% {
+		color: red;
+		background: inherit;
+	}
+}
